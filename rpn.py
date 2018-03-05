@@ -1,7 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
 
 import operator
 import readline
+import sys
+from termcolor import colored, cprint
+
 
 operators = {
     '+': operator.add,
@@ -31,7 +34,14 @@ print("I wish I knew more python")
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print("Result: ", result)
+        resultKeyword = colored("Return: ", "blue")
+        
+        if result < 0:
+            result = colored(result, 'red')
+        else: 
+            result = colored(result, 'yellow') 
+        
+        print(resultKeyword,result)
 
 if __name__ == '__main__':
     main()
