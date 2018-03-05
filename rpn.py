@@ -27,7 +27,7 @@ def calculate(myarg):
     return stack.pop()
 
 print("Added Unmarked Code")
-
+print("I wish I knew more python")
 def main():
     while True:
         result = calculate(input("rpn calc> "))
