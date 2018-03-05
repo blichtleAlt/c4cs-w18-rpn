@@ -4,5 +4,5 @@ python:
 install:
   - pip install coveralls
 script:
-  - python3 rpn_test.py
+  - python3 test_rpn.py
 
